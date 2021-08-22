@@ -1,0 +1,31 @@
+.gallery{
+    width: 900px;
+    margin: auto;
+    text-align: center;
+  }
+  #top{
+    background: rgb(131,58,180);
+  background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(254,30,30,1) 50%, rgba(252,176,69,1) 100%);
+        text-align: center;
+        color: white;
+        font-size:50;
+        border: 1px solid white;
+        border-radius: 100px;  
+        margin-left: 35%;
+        margin-right: 35%;
+        }
+  
+  .slide img{
+    width: 200px;
+    height: 150px;
+    border: 2px solid #055;
+    cursor: pointer;
+  }
+  body  {
+    background-image: linear-gradient(to right top, #d16ba5, #c777b9, #ba83ca, #aa8fd8, #9a9ae1, #8aa7ec, #79b3f4, #69bff8, #52cffe, #41dfff, #46eefa, #5ffbf1);
+  }
+  .slide img:hover{border:2px solid #f55}
+  .show img{
+    width: 620px;
+    height: 300px;
+  }

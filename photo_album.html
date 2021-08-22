@@ -1,0 +1,37 @@
+<html>
+<head>
+  <link rel="stylesheet" href="style.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+$(function () {
+  "use strict";
+  
+  $(".slide img").on({
+    mouseover: function () {
+      var src = $(this).attr("src");
+      $(".show img").attr("src", src)
+  },
+   mouseout: function () {
+    $(".show img")
+.attr("src","./imgs/loading.jpg")
+  }  
+  });
+});
+</script>
+</head>
+<body>
+  <p id="top">Photo Album</p>
+<div class="gallery">
+  <div class="slide">
+    <img src="./imgs/boat.jpg"  />   <!--Image name-->
+    <img src="./imgs/forest.jpg"  /> <!--Image name-->
+    <img src="./imgs/deer.png" />    <!--Image name-->
+    <img src="./imgs/lake.jpg" />    <!--Image name-->
+    <img src="./imgs/akio.jpg" />   <!--Image name-->
+  </div>
+  <div class="show">
+    <img src="./imgs/loading.jpg"/>  <!--Image name-->
+  </div>
+</div>
+</body>
+</html>
